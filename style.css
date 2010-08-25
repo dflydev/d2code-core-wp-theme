@@ -371,9 +371,9 @@ a img {
 }
 
 #menu-primary-navigation a {
-	font-size: 12px;
 	font-family: sans-serif;
 	font-weight: bold;
+	font-size: 12px;
 	text-decoration: none;
 	color: #ccc;
 }
@@ -381,21 +381,16 @@ a img {
 #menu-primary-navigation .menu-item {
 	display: inline-block;
 	padding: 5px 10px;
-	line-height: 20px;
 }
 
 #menu-primary-navigation .current-menu-item {
 	background-color: #fff;
-	background-image: -moz-linear-gradient(90deg, #fff, #eee 80%, #fff);
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff),
-		to(#fff), color-stop(.2, #eee) );
 	border-bottom: none;
-    line-height: 20px;
 }
 
 #menu-primary-navigation .current-menu-item a {
 	color: #555;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 .widget_search #s {
