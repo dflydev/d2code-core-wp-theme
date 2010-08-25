@@ -1,0 +1,417 @@
+/*
+Theme Name: d2code core
+Theme URI: http://dflydev.com/
+Description: d2code core WordPress Theme.
+Author: Dragonfly Development
+Version: 0.1
+*/
+html {
+	background-color: #fafafa;
+}
+
+html,body {
+	color: #444;
+}
+
+a {
+	color: #33b;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #83b;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+	text-align: center;
+}
+
+
+p {
+	margin: 1em 0px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	clear: both;
+	font-weight: bold;
+	color: black;
+	margin-bottom: 5px;
+}
+
+#content h1,#content h2,#content h3,#content h4,#content h5,#content h6
+	{
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.17em;
+}
+
+h4 {
+	
+}
+
+h5 {
+	font-size: .83em;
+}
+
+h6 {
+	font-size: .67em;
+}
+
+blockquote {
+	font-style: italic;
+	padding: 0px 3em;
+	quotes: none;
+}
+
+cite {
+	font-style: normal;
+}
+
+table {
+	border: 1px solid #E7E7E7;
+	margin: 0px -1px 24px 0px;
+	text-align: left;
+	width: 100%;
+}
+
+td {
+	border-top: 1px solid #E7E7E7;
+	padding: 6px 24px;
+}
+
+pre {
+	font-family: 'Courier 10 Pitch', Courier, monospace;
+	background-color: #eee;
+	padding: .5em;
+	margin: .5em;
+}
+
+i,em,var,address {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+code {
+	font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono',
+		monospace;
+}
+
+input[type="text"],textarea {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0976562) 1px 1px 1px inset;
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	padding: 2px;
+}
+
+dl {
+	margin: 0px 0px 24px;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-bottom: 24px;
+}
+
+ul,ul li {
+	list-style: square;
+}
+
+#content ul {
+	margin: 0px 0px 24px 1.5em;
+}
+
+#content ul ul {
+	margin-bottom: 0px
+}
+
+#sidebar ul,#sidebar ul li {
+	list-style: none;
+}
+
+#sidebar ul ul,#sidebar ul ul li {
+	list-style: square;
+}
+
+#sidebar ul ul {
+	margin-left: 1.5em;
+}
+
+ol {
+	margin: 0px 0px 24px 1.5em;
+}
+
+ol,ol li {
+	list-style: decimal;
+}
+
+ol ol {
+	margin-bottom: 0px;
+}
+
+ol ol,ol ol li {
+	list-style: upper-alpha;
+}
+
+ol ol ol,ol ol li {
+	list-style: lower-roman;
+}
+
+#content img.alignleft,#content img.alignright,#content img.aligncenter
+	{
+	margin-bottom: 12px;
+}
+
+#content .alignleft,#content img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 24px;
+	margin-top: 4px;
+}
+
+#content img {
+	margin: 0px;
+	max-width: 640px;
+}
+
+#content .alignright,#content img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 24px;
+	margin-top: 4px;
+}
+
+#content .aligncenter,#content img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content .wp-caption img {
+	margin: 5px 5px 0px;
+}
+
+a img {
+	border: none;
+}
+
+#content .wp-caption {
+	background: #F1F1F1;
+	line-height: 18px;
+	margin-bottom: 20px;
+	padding: 4px;
+	text-align: center;
+}
+
+#content .wp-caption p.wp-caption-text {
+	color: #888;
+	font-size: 12px;
+	margin: 5px;
+}
+
+.post {
+	margin-bottom: 24px;
+}
+
+.entry-content {
+}
+
+#content .entry-title {
+	font-size: 2em;
+	margin-bottom: 0px;
+}
+
+.entry-title a {
+	color: #000;
+	text-decoration: none;
+}
+
+.entry-title a:hover {
+	color: #555;
+	text-decoration: underline;
+}
+
+#wrapper {
+	margin: 0px auto;
+	width: 900px;
+	clear: both;
+	text-align: left;
+}
+
+#content,#sidebar {
+	border: 0px solid blue;
+}
+
+#content {
+	float: left;
+	width: 680px;
+}
+
+#sidebar {
+	float: right;
+	width: 220px;
+}
+
+.page-template-no-sidebar-page-php #sidebar {
+	display: none;
+}
+
+.page-template-no-sidebar-page-php #content {
+	width: 900px;
+}
+
+
+#sidebar .sidebar-content {
+	padding: 5px;
+}
+
+#sidebar .widget-container {
+	margin-bottom: 24px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#access {
+	background-color: #555555;
+	background-image: -moz-linear-gradient(90deg, #666666, #555555 80%, #666666);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#666666), to(#666666), color-stop(.2, #555555) );
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px 10px;
+	border-top-right-radius: 10px 10px;
+	border: 1px solid #555;
+	border-bottom: none;
+	color: #ffffff;
+	width: 100%;
+}
+
+#main {
+	background-color: #fff;
+	width: 100%;
+	float: left;
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+	border-bottom-left-radius: 8px 8px;
+	border-bottom-right-radius: 8px 8px;
+	border: 1px solid #555;
+	border-top: none;
+}
+
+#content .content-content {
+	padding: 10px;
+}
+
+#extra {
+	display: none;
+}
+
+#extra {
+	width: 100%;
+	float: left;
+	clear: both;
+	margin: 20px 0px;
+	-moz-border-radius: 8px;
+	border-radius: 8px 8px;
+	border: 1px solid #555;
+}
+
+#sidebar .sidebar-content {
+	padding: 10px;
+}
+
+#extra .extra-content {
+	padding: 10px;
+}
+
+#footer {
+	font-size: .8em;
+	width: 100%;
+	clear: both;
+	float: left;
+	margin: 40px 0px 30px 0px;
+	text-align: center;
+}
+
+.screen-reader-text {
+	position: absolute;
+	left: -9000px;
+}
+
+#site-title {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+#site-description {
+	margin-bottom: 20px;
+}
+
+#site-title a {
+	color: #000;
+}
+
+#site-info {
+	margin-bottom: 30px;
+}
+
+#menu-primary-navigation {
+	padding: 5px 0px 0px 5px;
+}
+
+#menu-primary-navigation a {
+	font-size: 12px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: #ccc;
+}
+
+#menu-primary-navigation .menu-item {
+	display: inline-block;
+	padding: 5px 10px;
+	line-height: 20px;
+}
+
+#menu-primary-navigation .current-menu-item {
+	background-color: #fff;
+	background-image: -moz-linear-gradient(90deg, #fff, #eee 80%, #fff);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff),
+		to(#fff), color-stop(.2, #eee) );
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-left-radius: 8px 8px;
+	border-top-right-radius: 8px 8px;
+	border: 1px solid #ccc;
+	border-bottom: none;
+}
+
+#menu-primary-navigation .current-menu-item a {
+	color: #555;
+	font-size: 15px;
+}
+
+.widget_search #s {
+	width: 60%;
+}
