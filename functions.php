@@ -3,7 +3,20 @@
 require_once('functions-widgets.php');
 
 function d2code_core_setup() {
-
+    
+    if ( ! is_admin() ) {
+        if ( defined('D2CODE_CHILD_IN_USE') ) {
+            wp_enqueue_style('d2code_core-reset-fonts', get_bloginfo('template_directory').'/reset-fonts.css', null, null, 'all');
+            wp_enqueue_style('d2code_core', get_bloginfo('template_directory').'/style.css', null, null, 'all');
+            if ( function_exists('d2code_child_enqueue_style') ) {
+                d2code_child_enqueue_style();
+            }
+        } else {
+            wp_enqueue_style('d2code_core-reset-fonts', get_bloginfo('stylesheet_directory').'/reset-fonts.css', null, null, 'all');
+            wp_enqueue_style('d2code_core', get_bloginfo('stylesheet_directory').'/style.css', null, null, 'all');
+        }
+    }
+    
     register_nav_menus( array(
         'primary' => __( 'Primary Navigation', 'd2code_core' ),
     ) );
@@ -11,7 +24,6 @@ function d2code_core_setup() {
 }
 
 add_action( 'after_setup_theme', 'd2code_core_setup' );
-
 
 function d2code_core_posted_on() {
     printf( __( '<span class="%1$s">Posted on</span> %2$s <span class="meta-sep">by</span> %3$s', 'd2code_core' ),

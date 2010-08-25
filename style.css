@@ -403,8 +403,8 @@ a img {
 	-moz-border-radius-topright: 8px;
 	border-top-left-radius: 8px 8px;
 	border-top-right-radius: 8px 8px;
-	border: 1px solid #ccc;
 	border-bottom: none;
+    line-height: 20px;
 }
 
 #menu-primary-navigation .current-menu-item a {
