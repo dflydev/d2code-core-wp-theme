@@ -295,10 +295,6 @@ a img {
 	background-color: #555555;
 	background-image: -moz-linear-gradient(90deg, #666666, #555555 80%, #666666);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#666666), to(#666666), color-stop(.2, #555555) );
-	-moz-border-radius-topleft: 10px;
-	-moz-border-radius-topright: 10px;
-	border-top-left-radius: 10px 10px;
-	border-top-right-radius: 10px 10px;
 	border: 1px solid #555;
 	border-bottom: none;
 	color: #ffffff;
@@ -309,10 +305,6 @@ a img {
 	background-color: #fff;
 	width: 100%;
 	float: left;
-	-moz-border-radius-bottomleft: 8px;
-	-moz-border-radius-bottomright: 8px;
-	border-bottom-left-radius: 8px 8px;
-	border-bottom-right-radius: 8px 8px;
 	border: 1px solid #555;
 	border-top: none;
 }
@@ -330,8 +322,6 @@ a img {
 	float: left;
 	clear: both;
 	margin: 20px 0px;
-	-moz-border-radius: 8px;
-	border-radius: 8px 8px;
 	border: 1px solid #555;
 }
 
@@ -399,10 +389,6 @@ a img {
 	background-image: -moz-linear-gradient(90deg, #fff, #eee 80%, #fff);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff),
 		to(#fff), color-stop(.2, #eee) );
-	-moz-border-radius-topleft: 8px;
-	-moz-border-radius-topright: 8px;
-	border-top-left-radius: 8px 8px;
-	border-top-right-radius: 8px 8px;
 	border-bottom: none;
     line-height: 20px;
 }
