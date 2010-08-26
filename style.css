@@ -407,3 +407,7 @@ a img {
 #content .post-parent ul {
 	margin-bottom: 0px;
 }
+
+.page-shortcodes-meta {
+    margin-bottom: .5em;
+}

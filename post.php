@@ -4,7 +4,6 @@
     <?php if ( $post->post_parent ) { ?>
     <div class="post-parent">
         <ul>
-        <li>&laquo;</li>
         <?php
             $parentPosts = array();
             $parentPostId = $post->post_parent;
@@ -15,7 +14,7 @@
             $parentPostCount = 0;
             foreach ( array_reverse($parentPosts) as $parentPost ) {
         ?>
-            <?php if ( $parentPostCount > 0 ) { ?><li>::</li><?php } ?>
+            <?php if ( $parentPostCount > 0 ) { ?><li>/</li><?php } ?>
             <li><a href="<?php echo get_permalink($parentPost->ID); ?>"><?php echo get_the_title($parentPost->ID); ?></a></li>
         <?php $parentPostCount++; } ?>
         </ul>
