@@ -42,9 +42,8 @@ h1,h2,h3,h4,h5,h6 {
 	margin-bottom: 5px;
 }
 
-#content h1,#content h2,#content h3,#content h4,#content h5,#content h6
-	{
-	margin-bottom: 20px;
+#content h1,#content h2,#content h3,#content h4,#content h5,#content h6 {
+	margin-bottom: 5px;
 }
 
 h1 {
@@ -395,4 +394,16 @@ a img {
 
 .widget_search #s {
 	width: 60%;
+}
+
+#content .post-parent ul, #content .post-parent li {
+    list-style: none;
+    margin-left: 0px;
+}
+
+#content .post-parent li {
+	display: inline-block;
+}
+#content .post-parent ul {
+	margin-bottom: 0px;
 }

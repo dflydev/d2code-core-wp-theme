@@ -1,6 +1,27 @@
 <div class="post">
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+    <?php if ( $post->post_parent ) { ?>
+    <div class="post-parent">
+        <ul>
+        <li>&laquo;</li>
+        <?php
+            $parentPosts = array();
+            $parentPostId = $post->post_parent;
+            while ( $parentPostId ) {
+                $parentPosts[] = $thisParentPost = get_post($parentPostId);
+                $parentPostId = $thisParentPost->post_parent;
+            }
+            $parentPostCount = 0;
+            foreach ( array_reverse($parentPosts) as $parentPost ) {
+        ?>
+            <?php if ( $parentPostCount > 0 ) { ?><li>::</li><?php } ?>
+            <li><a href="<?php echo get_permalink($parentPost->ID); ?>"><?php echo get_the_title($parentPost->ID); ?></a></li>
+        <?php $parentPostCount++; } ?>
+        </ul>
+    </div>
+    <?php } ?>
+
     <?php if ( ! get_post_meta($post->ID, 'd2code.core.no-meta', true) ) { ?>
     <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'd2code_core' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
@@ -21,6 +42,24 @@
         <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'd2code_core' ), 'after' => '</div>' ) ); ?>
         </div>
     <?php endif; ?>
+    
+    <div class="entry-utility">
+        <?php if ( count( get_the_category() ) ) : ?>
+            <span class="cat-links">
+                <?php printf( __( '<span class="%1$s">Posted in</span> %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
+            </span>
+            <span class="meta-sep">|</span>
+        <?php endif; ?>
+        <?php
+        $tags_list = get_the_tag_list( '', ', ' );
+        if ( $tags_list ):
+        ?>
+            <span class="tag-links">
+                <?php printf( __( '<span class="%1$s">Tagged</span> %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
+            </span>
+            <span class="meta-sep">|</span>
+        <?php endif; ?>
+    </div><!-- .entry-utility -->
         
 </div>
 </div>
