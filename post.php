@@ -3,10 +3,12 @@
 
     <?php if ( ! get_post_meta($post->ID, 'd2code.core.no-meta', true) ) { ?>
     <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'd2code_core' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-    
+
+    <?php if ( ! get_post_meta($post->ID, 'd2code.core.no-author', true) ) { ?>
     <div class="entry-meta">
     <?php d2code_core_posted_on(); ?>
     </div><!-- .entry-meta -->
+    <?php } ?>
     <?php } ?>
     
     <?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
