@@ -4,6 +4,8 @@ require_once('functions-widgets.php');
 
 function d2code_core_setup() {
     
+    add_theme_support( 'automatic-feed-links' );
+    
     if ( ! is_admin() ) {
         if ( defined('D2CODE_CHILD_IN_USE') ) {
             wp_enqueue_style('d2code_core-reset-fonts', get_bloginfo('template_directory').'/reset-fonts.css', null, null, 'all');
