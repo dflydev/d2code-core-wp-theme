@@ -493,6 +493,10 @@ h3#comments-title, h3#reply-title {
 .entry-content-no-meta {
 	margin-top: 0px;
 }
+
+.nocomments {
+	display: none;
+}
 .page-shortcodes-meta {
     margin-bottom: .5em;
 }
