@@ -58,8 +58,12 @@
             </span>
             <span class="meta-sep">|</span>
         <?php endif; ?>
+        <?php if ( comments_open() ) : ?>
         <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'd2code_core' ), __( '1 Comment', 'd2code_core' ), __( '% Comments', 'd2code_core' ) ); ?></span>
         <?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
+        <?php else: ?>
+        <?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
+        <?php endif; ?>
     </div><!-- .entry-utility -->
         
 </div>
