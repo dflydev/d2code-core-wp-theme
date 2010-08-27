@@ -365,11 +365,13 @@ a img {
 	margin-bottom: 30px;
 }
 
-#menu-primary-navigation {
+#menu-primary-navigation,
+#access .menu {
 	padding: 5px 0px 0px 5px;
 }
 
-#menu-primary-navigation a {
+#menu-primary-navigation a,
+#access .menu a {
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 12px;
@@ -377,20 +379,25 @@ a img {
 	color: #ccc;
 }
 
-#menu-primary-navigation .menu-item {
+#menu-primary-navigation .menu-item,
+#access .page_item {
 	display: inline-block;
 	padding: 5px 10px;
 }
 
-#menu-primary-navigation .current-menu-item {
+#menu-primary-navigation .current-menu-item,
+#access .current_page_item {
 	background-color: #fff;
 	border-bottom: none;
 }
 
-#menu-primary-navigation .current-menu-item a {
+#menu-primary-navigation .current-menu-item a,
+#access .current_page_item a {
 	color: #555;
 	font-size: 16px;
 }
+
+#access .menu ul ul { display: none; }
 
 .widget_search #s {
 	width: 60%;
@@ -408,6 +415,84 @@ a img {
 	margin-bottom: 0px;
 }
 
+#content .navigation {
+	clear: both;
+	color: #888;
+	font-size: 12px;
+	line-height: 18px;
+	overflow: hidden;
+}
+
+#content .navigation .nav-next {
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+
+#content .navigation .nav-previous {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+#nav-above { margin: 0px 0px 5px; }
+#nav-below { margin: -10px 0px 0px; }
+
+#respond textarea {
+	width: 98%;
+}
+
+input[type="text"],textarea {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0976562) 1px 1px 1px inset;
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+    padding: 2px;
+}
+
+#comments { clear: both; }
+#comments-title { padding: 24px 0px; }
+h3#comments-title, h3#reply-title {
+	
+}
+.commentlist li.comment {
+	border-bottom: 1px solid #E7E7E7;
+	margin: 0px 0px 24px;
+	padding: 0px 0px 0px 56px;
+	position: relative;
+}
+.commentlist {
+    margin: 0px 0px 20px;
+}
+.commentlist, .commentlist li {
+    list-style: none;
+}
+.commentlist .avatar {
+	left: 0px;
+	position: absolute;
+	top: 4px;
+}
+.comment-author {
+	margin: 0px; padding: 0px;
+}
+.comment-author .says {
+	font-style: italic;
+}
+.comment-meta {
+    margin: 0px 0px 10px;
+    font-size: smaller;
+}
+.reply {
+	padding: 0px 0px 24px;
+}
+#respond .form-allowed-tags {
+	color: #888;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.entry-content-no-meta {
+	margin-top: 0px;
+}
 .page-shortcodes-meta {
     margin-bottom: .5em;
 }
